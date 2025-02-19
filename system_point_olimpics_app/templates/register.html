@@ -29,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav list_menu">
             <li class="nav-item">
-              <a class="nav-link" href="#">Ponto Eletrônico</a>
+              <a class="nav-link" href="{% url 'register' %}">Ponto Eletrônico</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Configuração</a>
+              <a class="nav-link" href="{% url 'salvar_usuario' %}">Configuração</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Perfil</a>
+              <a class="nav-link" href="">Perfil</a>
             </li>
           </ul>
         </div>
@@ -67,7 +67,7 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label class="form-label"><span class="style_text">Telefone:</span></label>
-                <input type="text" class="form-control" name="phone" required />
+                <input type="text" class="form-control" data-format="(99) 9999-9999" data-alt-format="(99) 99999-9999" name="phone" required />
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label"><span class="style_text">Ocupação:</span></label>
@@ -84,7 +84,7 @@
               <div class="col-md-6 mb-3">
                 <label class="form-label"><span class="style_text">Data de Nascimento:</span></label>
                 <input type="date" class="form-control" name="date_of_birth" id="date_of_birth" required />
-                <div id="error-message" style="color: red; display: none;">A data de nascimento não pode ser no futuro.</div>
+                <div id="error-message" style="color: red; display: none; font-size: 20px;">A data de nascimento não pode ser no futuro.</div>
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label"><span class="style_text">Email:</span></label>
@@ -119,6 +119,6 @@
 
     <script src="{% static 'register/scripts/image.js' %}"></script>
     <script src="{% static 'register/scripts/modalConfir.js' %}"></script>
-    <script src="{% static 'register/scripts/futureDate.js' %}"></script>
+    <script src="{% static 'register/scripts/formatPhone.js' %}"></script>
   </body>
 </html>

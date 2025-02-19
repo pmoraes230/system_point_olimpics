@@ -5,6 +5,6 @@ from system_point_olimpics_app.views import cadastrar_usuario, register_system
 
 
 urlpatterns = [
-    path('', cadastrar_usuario, name="salvar_usuario"),
-    path('register_success/', register_system, name='register')
+    path('', register_system, name='register'),
+    path('register_users/', cadastrar_usuario, name="salvar_usuario"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

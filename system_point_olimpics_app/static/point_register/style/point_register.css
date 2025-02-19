@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+body {
+    font-family: "League Gothic", serif;
+}
+
+.bg-orange-main {
+    background-color: #F08809;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 127px;
+    width: auto;
+    padding-right: 60rem;
+}
+
+.list_menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 19px;
+    width: 80%;
+}
+
+.list_menu a {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
+.bg_clock {
+    background: url(../img/3771150_76820.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-wrapper {
+    background-color: #223666;
+    width: 520px;
+    height: 305px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_clock-world {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.flags {
+    height: 150px;
+    width: auto;
+    margin-right: 25px;
+}
+
+.clocks {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.clocks h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.btn_clock {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+
+.footer {
+    background-color: #60903B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    color: #ffffff;
+}
+
+.image_copy img{
+    width: 53px;
+    margin-right: 1rem;
+}

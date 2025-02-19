@@ -16,7 +16,7 @@ class Ocupations(models.Model):
 class Users(models.Model):
     name = models.CharField(max_length=45)
     surname = models.CharField(max_length=45)
-    phone = models.IntegerField()
+    phone = models.CharField(max_length=15)
     date_of_birth = models.DateField()
     email = models.CharField(max_length=45)
     image = models.ImageField(upload_to='users')
